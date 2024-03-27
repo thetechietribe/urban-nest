@@ -34,3 +34,6 @@
     font-weight: 500;
     font-family: fantasy;
 }
+.menu-bars{
+    display: none;
+}   

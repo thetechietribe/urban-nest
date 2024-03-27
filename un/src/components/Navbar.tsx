@@ -1,3 +1,5 @@
+import MenuIcon from '@mui/icons-material/Menu';
+
 function Navbar() {
   return (
     <nav className="navbar">
@@ -13,6 +15,9 @@ function Navbar() {
           <li>media</li>
           <li>contact</li>
         </ul>
+        <div className="menu-bars">
+          <MenuIcon/>
+        </div>
       </div>
     </nav>
   );
