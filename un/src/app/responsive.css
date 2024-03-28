@@ -1,0 +1,18 @@
+@media screen and (max-width:900px) {
+    .opts{
+        display:  none;
+    }
+    .nav-logo{
+        margin: auto;
+    }
+    .container{
+        width: 80%;
+    }
+    .menu-bars{
+        display: flex;
+    }
+    .menu-icon{
+        height: 50px;
+        width: 50px;
+    }
+}
