@@ -9,7 +9,7 @@ function Message() {
         GA, we serve the metro Atlanta area and beyond. Let us turn your vision
         into a reality!
       </p>
-      <h2 className="msg-link">ABOUT US</h2>
+      <h2 className="msg-link shrink">ABOUT US</h2>
     </div>
   );
 }

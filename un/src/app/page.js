@@ -3,6 +3,7 @@ import './responsive.css'
 import Navbar from '@/components/Navbar'
 import ImageSlider from '@/components/ImageSlider'
 import Message from '@/components/Message'
+import Featured from '@/components/Featured'
 
 export default function Homepage(){
 
@@ -11,6 +12,7 @@ export default function Homepage(){
         <Navbar/>
         <ImageSlider/>
         <Message/>
+        <Featured/>
         </>
     )
 };
