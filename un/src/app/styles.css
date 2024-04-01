@@ -5,6 +5,7 @@
 }
 .navbar {
   display: flex;
+  background-color: white;
 }
 .container {
   width: 60%;
@@ -37,14 +38,19 @@
 .menu-bars {
   display: none;
 }
+.wrapper {
+  background-color: white !important;
+}
 .slide {
   width: 95%;
   margin: 0 auto;
   height: 600px;
 }
 .msg {
+  background-color: white;
   width: 50%;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 50px;
   text-align: center;
 }
 .msg-title {
@@ -62,7 +68,9 @@
   cursor: pointer;
 }
 .featured {
+  background-color: white;
   border-top: black 1px solid;
+  padding-bottom: 50px;
 }
 .f-title {
   text-align: center;
@@ -76,21 +84,37 @@
   display: flex;
   justify-content: space-between;
 }
-.feature{
+.feature {
   width: 30%;
 }
-.f-img{
+.f-img {
   width: 100%;
 }
-.f-name{
+.f-name {
   text-align: center;
   text-transform: uppercase;
   font-size: 20px;
   padding: 10px;
   cursor: pointer;
 }
-.shrink:hover{
+.shrink:hover {
   scale: 0.7;
   color: #b2a595;
   transition: all 0.3s ease-in;
+}
+.transparent {
+  height: 500px;
+}
+.transparent::before {
+  content: "";
+  background-image: url("https://static.wixstatic.com/media/a3a7c5_ebd02490be3942cb85f19ba61bdadaae~mv2.png/v1/fill/w_980,h_919,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a3a7c5_ebd02490be3942cb85f19ba61bdadaae~mv2.png");
+  height: 100vh; 
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.demo{
+  padding: 50px 0;
 }
