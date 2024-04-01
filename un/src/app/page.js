@@ -15,11 +15,12 @@ export default function Homepage(){
         <div className="wrapper">
         <ImageSlider/>
         <Message/>
-        <Featured/>
+        <Featured/> 
         </div>
         <Transparent/>
         <div className="wrapper">
         <Demo/>
+        
         </div>
         </>
     )

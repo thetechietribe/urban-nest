@@ -108,8 +108,11 @@
 .transparent::before {
   content: "";
   background-image: url("https://static.wixstatic.com/media/a3a7c5_ebd02490be3942cb85f19ba61bdadaae~mv2.png/v1/fill/w_980,h_919,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a3a7c5_ebd02490be3942cb85f19ba61bdadaae~mv2.png");
-  height: 100vh; 
-  width: 100vw;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  height: 100%; 
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -117,4 +120,55 @@
 }
 .demo{
   padding: 50px 0;
+  margin-left: 10%;
+  display: flex;
+}
+.left-col{
+  padding: 50px 0;
+  margin:0 100px;
+  position: relative;
+}
+.demo-title{
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+}
+.demo-cat{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 200;
+  border-bottom: black 1px solid;
+  padding: 2px;
+}
+.demo-content{
+  font-size: 28px;
+  font-weight: 100;
+  padding: 20px;
+  padding-left: 0;
+}
+.demo-socials{
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.social-btns{
+  display: flex;
+  margin-top: 20px;
+}
+.social-btn{
+  padding: 10px 20px;
+  background-color: #e7e4da;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 100;
+  cursor: pointer;
+}
+.social-btn:first-child{
+  margin-right: 20px;
+}
+.social-btn:hover{
+  opacity: 0.3;
 }
