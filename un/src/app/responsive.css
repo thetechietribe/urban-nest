@@ -1,4 +1,4 @@
-@media screen and (max-width:900px) {
+@media screen and (max-width:1200px) {
     .opts{
         display:  none;
     }
@@ -14,5 +14,17 @@
     .menu-icon{
         height: 50px;
         width: 50px;
+    }
+    .msg{
+        width: 60%;
+        margin-top: 20px;
+    }
+    .features{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .feature{
+        width: 98%;
+        margin-bottom: 10px;
     }
 }

@@ -8,10 +8,26 @@ export default () => {
   return (
     <div className="slider-wraper">
       <Swiper
-        slidesPerView={4}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        autoplay="true"
+        slidesPerView={1}
+        breakpoints={{
+          500:{
+            slidesPerView: 2,
+          },
+          800:{
+            slidesPerView: 3,
+          },
+          1200:{
+            slidesPerView: 4,
+          },
+          1400:{
+            slidesPerView: 5,
+          },
+        }}
+        autoplay={{
+          delay: 25,
+          disableOnInteraction: false,
+        }}
+        loop={true}
       >
         <SwiperSlide>
           <img
@@ -41,6 +57,12 @@ export default () => {
           <img
             className="slide"
             src="https://static.wixstatic.com/media/a3a7c5_cc6acf17b64d46d89b6821405cd1db7a~mv2.jpg/v1/fit/w_1500,h_771,q_90/a3a7c5_cc6acf17b64d46d89b6821405cd1db7a~mv2.jpg"
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="slide"
+            src="https://static.wixstatic.com/media/a3a7c5_0b50834537ca4204a77fe68560b91e8e~mv2.jpg/v1/fit/w_1500,h_771,q_90/a3a7c5_0b50834537ca4204a77fe68560b91e8e~mv2.jpg"
           ></img>
         </SwiperSlide>
       </Swiper>

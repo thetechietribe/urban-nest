@@ -6,6 +6,10 @@ import Message from '@/components/Message'
 import Featured from '@/components/Featured'
 import Transparent from '@/components/Transparent'
 import Demo from '@/components/Demo'
+import Videos from '@/components/Videos'
+import Join from '@/components/Join'
+import Services from '@/components/Services'
+import Copyright from '@/components/Copyright'
 
 export default function Homepage(){
 
@@ -20,7 +24,10 @@ export default function Homepage(){
         <Transparent/>
         <div className="wrapper">
         <Demo/>
-        
+        <Videos/>
+        <Join/>
+        <Services/>
+        <Copyright/>
         </div>
         </>
     )
