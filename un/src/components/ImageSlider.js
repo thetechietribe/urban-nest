@@ -16,12 +16,6 @@ export default () => {
           800:{
             slidesPerView: 3,
           },
-          1200:{
-            slidesPerView: 4,
-          },
-          1400:{
-            slidesPerView: 5,
-          },
         }}
         autoplay={{
           delay: 25,
