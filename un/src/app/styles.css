@@ -4,6 +4,10 @@
   overflow-x: hidden;
   font-family : "Sweet Sans Pro";
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 .navbar {
   display: flex;
   background-color: white;
@@ -35,7 +39,7 @@
 .opts li:hover {
   color: #b2a595;
 }
-.nav-logo {
+.nav-logo a{
   font-size: 60px;
   font-weight: 100;
   font-family: 'Caveat';
@@ -57,23 +61,21 @@
   text-align: center;
 }
 .msg-title {
-  font-family: 'Austin';
-  font-size: 40px;
-  font-weight: 100;
+  font: normal normal normal 33px/1.4em 'Austin';
   padding-bottom: 20px;
   font-weight: 100;
 }
 .msg-content {
-  font-size: 25px;
+  font-size: 23px;
+  text-align: center;
   padding: 20px 0;
-  width: 80%;
-  margin: auto;
+  font-weight: 100;
 }
 .msg-link {
-  font-weight: 300;
+  font-weight: 100;
   cursor: pointer;
   border-bottom: 1px black solid;
-  width: 100px;
+  width: 150px;
   padding: 5px;
   margin: auto;
 }

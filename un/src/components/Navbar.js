@@ -5,11 +5,11 @@ function Navbar() {
     <nav className="navbar">
       <div className="container">
         <ul className="opts">
-          <li>about</li>
+          <li><a href='/about'>about</a></li>
           <li>services</li>
           <li>featured work</li>
         </ul>
-        <h1 className="nav-logo">Urban Nest</h1>
+        <h1 className="nav-logo"><a href='/'>Urban Nest</a></h1>
         <ul className="opts opts-2">
           <li>Community</li>
           <li>media</li>
