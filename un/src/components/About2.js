@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Founder from "../../public/Images/Founder.webp";
+import Des1 from "../../public/Images/Des1.webp";
+import Des2 from "../../public/Images/Des2.webp";
+import Des3 from "../../public/Images/Des3.webp";
 
 function About2() {
   return (
@@ -54,9 +57,50 @@ function About2() {
           </div>
         </div>
         <div className="designers">
-            <div className="designer">
-                <Image />
-            </div>
+          <div className="designer">
+            <Image src={Des1} width={242} height={339} />
+            <h1>Courtney Eidson</h1>
+            <h6>DESIGNER</h6>
+            <p>
+              Courtney is an artist in her own right and applies her artistic
+              sensibility towards creating design solutions tailored to each
+              client's unique needs and vision. Her education includes an
+              interesting blend of biology, chemistry, and art, including a year
+              abroad in Cortona, Italy studying the masters. Her use of texture,
+              color and light creates spaces that are livable, inviting, and
+              infused with personal touches.
+            </p>
+          </div>
+          <div className="designer">
+            <Image src={Des2} width={242} height={339} />
+            <h1>Emilie Morrison</h1>
+            <h6>DESIGNER</h6>
+            <p>
+              Emilie honed her ability to combine colors and textures in
+              stunning combinations through her experience at ADAC and in visual
+              merchandising for two of the top home retail brands in the
+              country. She brings her education in merchandising and textiles to
+              each project to ensure a well-rounded combination of fabrics and
+              design elements. Whether modern or traditional, she strives to
+              design inspiring interiors that are not only beautiful, but
+              functional and comfortable
+            </p>
+          </div>
+          <div className="designer">
+            <Image src={Des3} width={242} height={339} />
+            <h1>Brittany Hunt</h1>
+            <h6>DESIGNER</h6>
+            <p>
+              Brittany decided on a career change from nutrition to pursue her
+              passion for interior design. With a combination of education in
+              biology, chemistry, and interiors, Brittany brings a unique
+              perspective to her projects. She has previous experience in retail
+              design services and working for a luxury residential staging firm.
+              Brittany is our expert in 3D renderings helping clients see their
+              design come to life through visualizations and precise technical
+              plans.
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -121,4 +121,25 @@ a {
       }
     }
   }
+  .designers{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 50px;
+    /* position: relative; */
+    height: 735px;
+    .designer{
+        text-align: center;
+        width: 242px;
+        height: 100%;
+        /* position: absolute; */
+        top: 0;
+        h1{
+            font-family: Playful Display;
+            font-size: 25px;
+            font-weight: 100;
+            margin: 10px 0;
+        }
+    }
+  }
 }
