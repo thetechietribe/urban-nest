@@ -96,15 +96,16 @@ a {
           margin-top: 20px;
         }
       }
-      p , em{
+      p,
+      em {
         font-weight: lighter;
         padding-bottom: 20px;
         line-height: 25px;
-        span{
-            font-family: Caveat;
+        span {
+          font-family: Caveat;
         }
       }
-      .pd-20{
+      .pd-20 {
         padding: 10px;
       }
     }
@@ -112,34 +113,55 @@ a {
       width: 40%;
       padding: 0;
       margin: 0;
-      p{
+      p {
         font-size: 12px;
-        padding-top:10px ;
-        span{
-            font-family: Caveat;
+        padding-top: 10px;
+        span {
+          font-family: Caveat;
         }
       }
     }
   }
-  .designers{
+  .designers {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin-top: 50px;
     /* position: relative; */
-    height: 735px;
-    .designer{
-        text-align: center;
-        width: 242px;
-        height: 100%;
-        /* position: absolute; */
-        top: 0;
-        h1{
-            font-family: Playful Display;
-            font-size: 25px;
-            font-weight: 100;
-            margin: 10px 0;
-        }
+    height: 800px;
+    .designer {
+      text-align: center;
+      width: 242px;
+      height: 100%;
+      /* position: absolute; */
+      top: 0;
+      h1 {
+        font-family: Playful Display;
+        font-size: 25px;
+        font-weight: 100;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+.ab-3 {
+  display: flex;
+  justify-content: space-between;
+  .client {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    h1 {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 50px auto;
+      width: 400px;
+      font-size: 25px;
+      font-weight: 100;
+      
     }
   }
 }
