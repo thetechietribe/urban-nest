@@ -11,17 +11,20 @@ export default () => {
         slidesPerView={1}
         breakpoints={{
           500:{
-            slidesPerView: 2,
+            slidesPerView:  2,
           },
           800:{
             slidesPerView: 3,
           },
+          1200:{
+            slidesPerView:5,
+          },
         }}
         autoplay={{
-          delay: 25,
-          disableOnInteraction: false,
+          delay: 500,
         }}
         loop={true}
+        centeredSlides={true}
       >
         <SwiperSlide>
           <img
