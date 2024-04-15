@@ -1,40 +1,45 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "oswald";
   overflow-x: hidden;
+  font-family : "Sweet Sans Pro";
 }
 .navbar {
   display: flex;
   background-color: white;
 }
 .container {
-  width: 66%;
+  width: 77.5%;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  margin-bottom: 20px;
 }
 .opts {
   list-style: none;
   display: flex;
   text-transform: uppercase;
 }
+.opts-2 li{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
 .opts li {
   cursor: pointer;
-  font-size: 16px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-weight: 200;
   padding-right: 30px;
 }
 .opts li:hover {
   color: #b2a595;
 }
 .nav-logo {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 100;
-  font-family: 'caveat regular';
+  font-family: 'Caveat';
   margin-bottom: 20px;
-
 }
 .menu-bars {
   display: none;
@@ -42,15 +47,7 @@
 .wrapper {
   background-color: white !important;
 }
-.slide {
-  width: 98%;
-  margin: 0 auto;
-  height: 600px;
-}
-.swiper {
-  width: 100%;
-  position: relative;
-  left: 0px;
+.swiper{
 }
 .msg {
   background-color: white;
@@ -60,10 +57,10 @@
   text-align: center;
 }
 .msg-title {
+  font-family: 'Austin';
   font-size: 40px;
   font-weight: 100;
   padding-bottom: 20px;
-  font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
 }
 .msg-content {
