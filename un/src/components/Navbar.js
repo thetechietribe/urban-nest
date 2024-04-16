@@ -11,7 +11,7 @@ function Navbar() {
         </ul>
         <h1 className="nav-logo"><a href='/'>Urban Nest</a></h1>
         <ul className="opts opts-2">
-          <li>Community</li>
+          <li><a href='/community'>community</a></li>
           <li>media</li>
           <li>contact</li>
         </ul>
