@@ -148,6 +148,8 @@ a {
 }
 .s-3 {
   display: flex;
+  padding-bottom: 50px;
+  border-bottom: 1px black solid;
   div {
     width: 575px;
     margin-left: 5px;
