@@ -160,29 +160,116 @@ a {
       margin: 50px auto;
       width: 400px;
       font-size: 25px;
-      font-weight: 100; 
+      font-weight: 100;
     }
   }
 }
-.ab-4{
+.ab-4 {
   width: 70%;
   margin: 100px auto;
   text-align: center;
-  .values{
+  .values {
     display: flex;
     justify-content: space-between;
-    h2{
+    h2 {
       margin: 30px 0;
       font-size: 20px;
     }
-    p{
+    p {
       width: 250px;
     }
   }
 }
-.ab-5{
-  width:87.5%;
+.ab-5 {
+  width: 87.5%;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: black 1px solid;
+  h6 {
+    font-size: 25px;
+    font-family: playful display;
+  }
+  p {
+    text-align: center;
+    width: 120px;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 0;
+    border-bottom: #000 0.5px solid;
+    cursor: pointer;
+    padding-top: 10px;
+  }
+  p:hover {
+    color: #b2a595;
+  }
+}
+.join {
+  padding: 20px;
+  text-align: center;
+}
+.j-title {
+  font-size: 35px;
+}
+.j-content {
+  h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Georgia;
+    padding: 50px 0;
+    font-weight: 100;
+  }
+}
+.j-inputs {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  .j-inp {
+    width: 33%;
+    height: 20px;
+    padding: 10px;
+  }
+}
+.subscribe {
+  margin: 20px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background: white;
+  border: black 1px solid;
+  cursor: pointer;
+}
+.subscribe:hover {
+  color: #b2a595;
+}
+.services {
+  margin: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.service {
+  font-size: 18px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.service:hover {
+  color: #b2a595;
+}
+.copy {
+  text-align: center;
+  color: gray;
+  margin-bottom: 50px;
+}
+.policies {
+  display: flex;
+  justify-content: center;
+  p {
+    margin-right: 10px;
+    cursor: pointer;
+  }
 }
