@@ -185,8 +185,74 @@ a {
       font-size: 20px;
       line-height: 1.6em;
     }
-    .m20{
-        margin: 15px 0;
+    .m20 {
+      margin: 15px 0;
     }
+  }
+}
+.join {
+  padding: 20px;
+  text-align: center;
+}
+.j-title {
+  font-size: 35px;
+}
+.j-content {
+  h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Georgia;
+    padding: 50px 0;
+    font-weight: 100;
+  }
+}
+.j-inputs {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  .j-inp {
+    width: 33%;
+    height: 20px;
+    padding: 10px;
+  }
+}
+.subscribe {
+  margin: 20px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background: white;
+  border: black 1px solid;
+  cursor: pointer;
+}
+.subscribe:hover {
+  color: #b2a595;
+}
+.services {
+  margin: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.service {
+  font-size: 18px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.service:hover {
+  color: #b2a595;
+}
+.copy {
+  text-align: center;
+  color: gray;
+  margin-bottom: 50px;
+}
+.policies {
+  display: flex;
+  justify-content: center;
+  p {
+    margin-right: 10px;
+    cursor: pointer;
   }
 }
