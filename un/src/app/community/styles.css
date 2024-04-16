@@ -50,3 +50,20 @@ a {
 .menu-bars {
   display: none;
 }
+.c-1{
+  text-align: center;
+  width: 750px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  h1{
+    font-family: playful display;
+    font-weight: 100;
+    font-size: 34px;
+  }
+  p{
+    font-size: 25px;
+    font-weight:400;
+    padding: 20px;
+  }
+}

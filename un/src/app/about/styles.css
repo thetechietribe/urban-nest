@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Sweet Sans Pro";
+  font-family: Sweet Sans Pro;
 }
 a {
   text-decoration: none;
@@ -28,13 +28,13 @@ a {
 }
 .opts-2 li {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
+  font-weight: 400;
 }
 .opts li {
   cursor: pointer;
   font-size: 11px;
   letter-spacing: 0.1em;
-  font-weight: 200;
+  font-weight: 400;
   padding-right: 30px;
 }
 .opts li:hover {
@@ -42,7 +42,7 @@ a {
 }
 .nav-logo a {
   font-size: 60px;
-  font-weight: 100;
+  font-weight: 400;
   font-family: "Caveat";
   margin-bottom: 20px;
 }
@@ -59,10 +59,12 @@ a {
     text-align: center;
     h1 {
       font-family: Playful Display;
-      font-weight: lighter;
+      font-weight: 100;
     }
     p {
-      font: normal normal lighter 16px/1.6em "Sweet Sans Pro";
+      font-size: 20px;
+      line-height: 1.6em;
+      font-weight: 300;
       margin-top: 20px;
     }
   }
@@ -84,7 +86,6 @@ a {
         margin: 0;
         border-bottom: 0.5px black solid;
         width: 100%;
-        padding-bottom: 10px;
         margin-bottom: 20px;
         h1 {
           font-family: Playful Display;
@@ -92,13 +93,14 @@ a {
         }
         p {
           font-size: 10px;
-          margin: 0;
+          font-weight: 400;
+          letter-spacing: .1em;
           margin-top: 20px;
         }
       }
       p,
       em {
-        font-weight: lighter;
+        font-weight: 300;
         padding-bottom: 20px;
         line-height: 25px;
         span {
@@ -138,7 +140,7 @@ a {
       h1 {
         font-family: Playful Display;
         font-size: 25px;
-        font-weight: 100;
+        font-weight: 400;
         margin: 10px 0;
       }
     }
@@ -160,7 +162,7 @@ a {
       margin: 50px auto;
       width: 400px;
       font-size: 25px;
-      font-weight: 100;
+      font-weight: 400;
     }
   }
 }
@@ -220,7 +222,7 @@ a {
     text-transform: uppercase;
     font-family: Georgia;
     padding: 50px 0;
-    font-weight: 100;
+    font-weight: 400;
   }
 }
 .j-inputs {
