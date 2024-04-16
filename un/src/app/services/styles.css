@@ -183,9 +183,10 @@ a {
     em {
       font-style: italic;
       font-size: 20px;
+      line-height: 1.6em;
     }
     .m20{
-        margin: 20px 0;
+        margin: 15px 0;
     }
   }
 }
