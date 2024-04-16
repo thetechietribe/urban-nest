@@ -11,6 +11,7 @@ a {
 .navbar {
   display: flex;
   background-color: white;
+  border-bottom: black .5px solid;
 }
 .container {
   width: 77.5%;
@@ -49,9 +50,33 @@ a {
 .menu-bars {
   display: none;
 }
+.f-1{
+    margin: 90px 0;
+    margin-left: 10%;
+    display: flex;
+    div{
+        margin-right: 50px;
+        text-align: center;
+        img{
+            cursor: pointer;
+        }
+        h1{
+            font-size: 25px;
+            margin-top: 10px;
+            font-weight: 100;
+            font-family: playful display;
+        }
+        h1:hover{
+            color: #b2a595;
+            cursor: pointer;
+        }
+    }
+}
 .join {
   padding: 20px;
   text-align: center;
+  margin-top: 10px;
+  border-top: black 1px solid;
 }
 .j-title {
   font-size: 35px;
