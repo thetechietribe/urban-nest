@@ -34,7 +34,7 @@ export default function featuredPage() {
       />
       <div className="f-1">
         <div>
-        <Image src={Interior} width={350} height={500} />
+        <Image src={Interior} title="Swiss Expansion" width={350} height={500} />
         <h1>Swiss Expansion</h1>
         </div>
       </div>
