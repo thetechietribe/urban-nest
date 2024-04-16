@@ -1,51 +1,100 @@
 * {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: "Sweet Sans Pro";
-  }
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  .navbar {
-    display: flex;
-    background-color: white;
-  }
-  .container {
-    width: 77.5%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Sweet Sans Pro";
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.navbar {
+  display: flex;
+  background-color: white;
+}
+.container {
+  width: 77.5%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.opts {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+}
+.opts-2 li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.opts li {
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-weight: 200;
+  padding-right: 30px;
+}
+.opts li:hover {
+  color: #b2a595;
+}
+.nav-logo a {
+  font-size: 60px;
+  font-weight: 100;
+  font-family: "Caveat";
+  margin-bottom: 20px;
+}
+.menu-bars {
+  display: none;
+}
+.s-1 {
+  height: 630px;
+  width: 90%;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  .left{
+    width: 400px;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    h1{
+        font-size: 33px;
+        font-family: playful display;
+        font-weight: 100;
+    }
+    h2{
+        font-size: 17px;
+        padding: 10px 0;
+        letter-spacing: .1em;
+    }
+    p{
+        padding-right: 50px;
+        border-top: black .5px solid;
+        padding-top: 20px;
+        line-height: 1.6em;
+        font-size: 20px;
+    }
+    div{
+        text-align: start;
+        border-bottom: black 1px solid;
+        width: 150px;
+        max-height: 25px;
+        margin-top: 20px;
+        cursor: pointer;
+        h6{
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: all .5s ease-in-out;
+            bottom: 0;
+        }
+    }
+    div:hover{
+        h6{
+            font-size: 9px;
+            color: #b2a595;
+            padding-bottom: 5px;
+        }
+    }
   }
-  .opts {
-    list-style: none;
-    display: flex;
-    text-transform: uppercase;
-  }
-  .opts-2 li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-  }
-  .opts li {
-    cursor: pointer;
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    font-weight: 200;
-    padding-right: 30px;
-  }
-  .opts li:hover {
-    color: #b2a595;
-  }
-  .nav-logo a {
-    font-size: 60px;
-    font-weight: 100;
-    font-family: "Caveat";
-    margin-bottom: 20px;
-  }
-  .menu-bars {
-    display: none;
-  }
+}
