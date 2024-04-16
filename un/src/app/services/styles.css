@@ -55,94 +55,137 @@ a {
   margin-left: auto;
   display: flex;
   justify-content: space-between;
-  .left{
+  .left {
     width: 400px;
     margin: auto;
-    h1{
-        font-size: 33px;
-        font-family: playful display;
-        font-weight: 100;
+    h1 {
+      font-size: 33px;
+      font-family: playful display;
+      font-weight: 100;
     }
-    h2{
-        font-size: 17px;
-        padding: 10px 0;
-        letter-spacing: .1em;
+    h2 {
+      font-size: 17px;
+      padding: 10px 0;
+      letter-spacing: 0.1em;
     }
-    p{
-        padding-right: 50px;
-        border-top: black .5px solid;
-        padding-top: 20px;
-        line-height: 1.6em;
-        font-size: 20px;
+    p {
+      padding-right: 50px;
+      border-top: black 0.5px solid;
+      padding-top: 20px;
+      line-height: 1.6em;
+      font-size: 20px;
     }
-    div{
-        text-align: start;
-        border-bottom: black 1px solid;
-        width: 150px;
-        max-height: 25px;
-        margin-top: 20px;
-        cursor: pointer;
-        h6{
-            font-size: 18px;
-            text-transform: uppercase;
-            transition: all .5s ease-in-out;
-            bottom: 0;
-        }
+    div {
+      text-align: start;
+      border-bottom: black 1px solid;
+      width: 150px;
+      max-height: 25px;
+      margin-top: 20px;
+      cursor: pointer;
+      h6 {
+        font-size: 18px;
+        text-transform: uppercase;
+        transition: all 0.5s ease-in-out;
+        bottom: 0;
+      }
     }
-    div:hover{
-        h6{
-            font-size: 9px;
-            color: #b2a595;
-            padding-bottom: 5px;
-        }
+    div:hover {
+      h6 {
+        font-size: 9px;
+        color: #b2a595;
+        padding-bottom: 5px;
+      }
     }
   }
 }
-.s-2{
-    min-height: 500px;
-    margin: 100px 130px;
-    display: flex;
-    h1{
-        font-size: 32px;
-        font-family: playful display;
-        font-weight: 100;
-        line-height: 1.4em;
+.s-2 {
+  min-height: 500px;
+  margin: 100px 130px;
+  display: flex;
+  h1 {
+    font-size: 32px;
+    font-family: playful display;
+    font-weight: 100;
+    line-height: 1.4em;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.6em;
+    margin-top: 1.6em;
+    width: 440px;
+  }
+  .git {
+    width: 200px;
+    margin-left: auto;
+    margin-top: 20px;
+    border-bottom: 1px black solid;
+    padding-bottom: 5px;
+    h4 {
+      font-size: 24px;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
     }
-    p{
+  }
+  .git:hover {
+    h4 {
+      color: #b2a595;
+      font-size: 9px;
+      margin-top: 13px;
+    }
+  }
+  .left {
+    width: 450px;
+    margin-right: 150px;
+    margin-top: 50px;
+  }
+  .right {
+    width: 450px;
+  }
+  .h1 {
+    margin-top: 50px;
+  }
+}
+.s-3 {
+  display: flex;
+  div {
+    width: 575px;
+    margin-left: 5px;
+    h1 {
+      font-family: playful display;
+      font-weight: 100;
+      font-size: 32px;
+      margin-top: 20px;
+    }
+    .gs {
+      margin: 30px 0px;
+      width: 250px;
+      border-bottom: 1px black solid;
+      h4 {
         font-size: 20px;
+        text-transform: uppercase;
         font-weight: 100;
-        line-height: 1.6em;
-        margin-top: 1.6em;
-        width: 440px;
+        letter-spacing: 0.1em;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+      }
     }
-    .git{
-        width: 200px;
-        margin-left: auto;
-        margin-top: 20px;
-        border-bottom: 1px black solid;
-        padding-bottom: 5px;
-        h4{
-            font-size: 24px;
-            cursor: pointer;
-            transition: all .5s ease-in-out;
-        }
+    .gs:hover {
+      h4 {
+        margin-top: 10px;
+        font-size: 10px;
+        color: #b2a595;
+      }
     }
-    .git:hover{
-        h4{
-            color: #b2a595;
-            font-size: 9px;
-            margin-top: 13px;
-        }
+    p {
+      font-size: 20px;
     }
-    .left{
-        width: 450px;
-        margin-right: 150px;
-        margin-top: 50px;
+    em {
+      font-style: italic;
+      font-size: 20px;
     }
-    .right{
-        width: 450px;   
+    .m20{
+        margin: 20px 0;
     }
-    .h1{
-        margin-top: 50px;
-    }
+  }
 }
