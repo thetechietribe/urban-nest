@@ -1,4 +1,26 @@
+"use client";
+import { sendReply } from "@/utils/sendReply";
+
 function Contact() {
+  const params = {
+    fname: "",
+    lname: "",
+    email: "",
+    phone: "",
+    msg: "",
+  };
+  const submitHandler = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    const formJson = Object.fromEntries(formData.entries());
+    params.email = formJson.email;
+    params.fname = formJson.fname;
+    params.lname = formJson.lname;
+    params.phone = formJson.phone;
+    params.msg = formJson.msg;
+    sendReply(params);
+  };
   return (
     <div className="contact">
       <div className="con-1">
@@ -20,53 +42,22 @@ function Contact() {
         </div>
       </div>
       <div className="con-2">
-        <div className="inputs">
+        <form onSubmit={submitHandler} className="inputs">
           <div className="row row-1">
-            <input placeholder="Name" />
-            <input placeholder="Email" />
+            <input placeholder="First Name" name="fname"/>
+            <input placeholder="Last Name" name="lname"/>
           </div>
           <div className="row row-2">
-            <input placeholder="Phone" />
-            <input placeholder="Project Address" />
-          </div>
-          <div className="row row-3">
-            <input placeholder="Desired Start Date" type="date" />
-            <select placeholder="Investment">
-              <option value="">Investment</option>
-              <option value="1">$25k-$50k</option>
-              <option value="2">$50k-$75k</option>
-              <option value="3">$75k-$100k</option>
-              <option value="4">$100k+</option>
-            </select>
+            <input placeholder="Email" type="email" name="email"/>
+            <input placeholder="Phone"  type="tel" name="phone"/>
           </div>
           <div className="row row-4">
-            <div>
-              <p>Project Type</p>
-              <div>
-                <input type="radio" value="full" name="project" />
-                <label for="full">Full Service Home Furnishings</label>
-              </div>
-              <div>
-                <input type="radio" value="custom" name="project" />
-                <label for="custom">Custom Home Build</label>
-              </div>
-              <div>
-                <input type="radio" value="large" name="project" />
-                <label for="large">Large Scale Remodel</label>
-              </div>
-              <div>
-                <input type="radio" value="build" name="project" />
-                <label for="build">Custom Home Builder Services</label>
-              </div>
-              <div>
-                <input type="radio" value="other" name="project" />
-                <label for="other">Other</label>
-              </div>
-              <input placeholder="How did you hear about us?"/>
+            <textarea placeholder="Message" name="msg" />
+            <div className="btn-wrapper">
+            <button type="submit">Send Message</button>
             </div>
-            <textarea placeholder="Message" />
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

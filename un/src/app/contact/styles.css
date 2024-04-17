@@ -50,7 +50,8 @@ a {
   margin-right: 50px;
   font-weight: 400;
 }
-.opts li a:hover,.opts-2 li a:hover {
+.opts li a:hover,
+.opts-2 li a:hover {
   color: #b2a595;
 }
 .nav-logo a {
@@ -143,29 +144,28 @@ a {
   }
   .row-4 {
     margin-top: 40px !important;
-    div {
-      p {
+    .btn-wrapper {
+      width: 440px;
+      height: 100%;
+      align-self: end;
+      button{
+        width: 220px;
+        height: 40px;
+        font-family: "roboto slab";
         font-size: 24px;
-        margin-bottom: 5px;
+        font-weight: 400;
+        color: rgb(251,250,249);
+        text-transform: uppercase;
+        background: #E7E4DA;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: .2s ease-in-out;
       }
-      div {
-        display: flex;
-        align-items: center;
-        input {
-          width: 13px;
-          height: 13px;
-          margin-right: 10px;
-        }
-        input:checked {
-          background: black;
-        }
-        label {
-          font-size: 18px;
-          line-height: 1.6em;
-        }
-      }
-      div:last {
-        margin-bottom: 20px;
+      button:hover{
+        color: #E7E4DA;
+        background: rgb(251,250,249);
+        border: 2px solid #E7E4DA;
       }
     }
   }
@@ -195,7 +195,9 @@ input::placeholder {
   h1 {
     text-transform: capitalize;
     padding: 25px 0;
-    font: normal normal lighter 38px/1.4em wfont_258105_834038867c27494a9e9c2b5b3c7f7eeb,wf_834038867c27494a9e9c2b5b3,orig_austin_news_headline_web_light;
+    font: normal normal lighter 38px/1.4em
+        wfont_258105_834038867c27494a9e9c2b5b3c7f7eeb,
+      wf_834038867c27494a9e9c2b5b3, orig_austin_news_headline_web_light;
   }
 }
 .j-inputs {
