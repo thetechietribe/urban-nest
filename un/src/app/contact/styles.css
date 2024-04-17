@@ -14,31 +14,43 @@ a {
   border-bottom: black 0.5px solid;
 }
 .container {
-  width: 77.5%;
-  margin: auto;
+  margin: 36px 153px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-top: 15px;
+  justify-content: center;
+  position: relative;
 }
 .opts {
   list-style: none;
   display: flex;
   text-transform: uppercase;
+  position: absolute;
+  left: 0px;
+}
+.opts-2 {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0px;
 }
 .opts-2 li {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  margin-left: 50px;
 }
 .opts li {
   cursor: pointer;
   font-size: 11px;
   letter-spacing: 0.1em;
+  margin-right: 50px;
   font-weight: 400;
-  padding-right: 30px;
 }
-.opts li a:hover {
+.opts li a:hover,.opts-2 li a:hover {
   color: #b2a595;
 }
 .nav-logo a {
@@ -166,34 +178,44 @@ input::placeholder {
   padding: 20px;
   text-align: center;
   border-top: black 1px solid;
+  .fancy {
+    font-family: "the austin";
+    width: 250px;
+    font-size: 33px;
+    margin: 20px auto;
+    letter-spacing: 0px;
+  }
 }
 .j-title {
-  font-size: 35px;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 .j-content {
   h1 {
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: Georgia;
-    padding: 50px 0;
-    font-weight: 100;
+    text-transform: capitalize;
+    padding: 25px 0;
+    font: normal normal lighter 38px/1.4em
+        wfont_258105_834038867c27494a9e9c2b5b3c7f7eeb,
+      wf_834038867c27494a9e9c2b5b3, orig_austin_news_headline_web_light;
   }
 }
 .j-inputs {
-  width: 50%;
   display: flex;
-  margin: auto;
+  justify-content: center;
   .j-inp {
-    width: 33%;
-    height: 20px;
-    padding: 10px;
+    width: 280px;
+    height: 30px;
+    padding: 3px;
+    padding-left: 15px;
+    margin-bottom: 10px;
   }
 }
 .subscribe {
-  margin: 20px 0;
-  padding: 10px 50px;
+  width: 150px;
+  height: 40px;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 9px;
   background: white;
   border: black 1px solid;
   cursor: pointer;
@@ -202,28 +224,29 @@ input::placeholder {
   color: #b2a595;
 }
 .services {
-  margin: 50px;
-  text-align: center;
+  margin: 25px auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   text-transform: uppercase;
+  width: 945px;
 }
 .service {
-  font-size: 18px;
-  margin-right: 50px;
+  font-size: 12px;
   cursor: pointer;
 }
 .service:hover {
   color: #b2a595;
 }
 .copy {
+  font-size: 14px;
   text-align: center;
-  color: gray;
+  color: rgb(178, 165, 149);
   margin-bottom: 50px;
 }
 .policies {
   display: flex;
   justify-content: center;
+  margin-bottom: 5px;
   p {
     margin-right: 10px;
     cursor: pointer;
