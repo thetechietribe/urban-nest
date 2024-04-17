@@ -1,69 +1,231 @@
 * {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: "Sweet Sans Pro";
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Sweet Sans Pro";
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.navbar {
+  display: flex;
+  background-color: white;
+  border-bottom: black 0.5px solid;
+}
+.container {
+  width: 77.5%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.opts {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+}
+.opts-2 li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.opts li {
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  padding-right: 30px;
+}
+.opts li a:hover {
+  color: #b2a595;
+}
+.nav-logo a {
+  font-size: 60px;
+  font-weight: 100;
+  font-family: "The Austin";
+  margin-bottom: 20px;
+}
+.menu-bars {
+  display: none;
+}
+.contact {
+  width: 100vw;
+  min-height: 500px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+.contact::before {
+  content: "";
+  background-image: url("../../../public/Images/Background.webp");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.con-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 70px;
+  border-bottom: 0.5px black solid;
+  .left {
+    font-size: 30px;
+    width: 475px;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    padding-bottom: 20px;
   }
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  .navbar {
-    display: flex;
-    background-color: white;
-    border-bottom: black .5px solid;
-  }
-  .container {
-    width: 77.5%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    margin-top: 15px;
-  }
-  .opts {
-    list-style: none;
-    display: flex;
-    text-transform: uppercase;
-  }
-  .opts-2 li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-  }
-  .opts li {
-    cursor: pointer;
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    font-weight: 200;
-    padding-right: 30px;
-  }
-  .opts li:hover {
-    color: #b2a595;
-  }
-  .nav-logo a {
-    font-size: 60px;
-    font-weight: 100;
-    font-family: "Caveat";
-    margin-bottom: 20px;
-  }
-  .menu-bars {
-    display: none;
-  }
-  .contact{
-      width: 100vw;
-      min-height: 500px;
-      background-color: rgba(255, 255, 255, 0.9);
-      position: relative;
+  .right {
+    h1 {
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+      margin-bottom: 20px;
+      margin-top: 30px;
     }
-    .contact::before{
-        content: "";
-        background-image: url('../../../public/Images/Background.webp');
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
+    p {
+      line-height: 25px;
+    }
   }
+}
+.con-2 {
+  width: 70%;
+  margin: 50px auto;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    input,
+    select,
+    textarea {
+      width: 440px;
+      min-height: 40px;
+      font-size: 21px;
+      line-height: 1.6em;
+      padding: 3px;
+      border: none;
+      outline: none;
+      background: none;
+      border-bottom: 1px black solid;
+    }
+    select {
+      padding-left: 0;
+      margin-left: 0;
+      position: relative;
+      right: 5px;
+    }
+    textarea {
+      resize: none;
+      min-height: 250px;
+    }
+    input:focus,
+    textarea:focus {
+      border-bottom: 2px solid #dbc5b0;
+    }
+  }
+  .row-4 {
+    margin-top: 40px !important;
+    div {
+      p {
+        font-size: 24px;
+        margin-bottom: 5px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        input {
+          width: 13px;
+          height: 13px;
+          margin-right: 10px;
+        }
+        input:checked {
+          background: black;
+        }
+        label {
+          font-size: 18px;
+          line-height: 1.6em;
+        }
+      }
+      div:last {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+input::placeholder {
+  color: black;
+}
+.join {
+  padding: 20px;
+  text-align: center;
+  border-top: black 1px solid;
+}
+.j-title {
+  font-size: 35px;
+}
+.j-content {
+  h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Georgia;
+    padding: 50px 0;
+    font-weight: 100;
+  }
+}
+.j-inputs {
+  width: 50%;
+  display: flex;
+  margin: auto;
+  .j-inp {
+    width: 33%;
+    height: 20px;
+    padding: 10px;
+  }
+}
+.subscribe {
+  margin: 20px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background: white;
+  border: black 1px solid;
+  cursor: pointer;
+}
+.subscribe:hover {
+  color: #b2a595;
+}
+.services {
+  margin: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.service {
+  font-size: 18px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.service:hover {
+  color: #b2a595;
+}
+.copy {
+  text-align: center;
+  color: gray;
+  margin-bottom: 50px;
+}
+.policies {
+  display: flex;
+  justify-content: center;
+  p {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
