@@ -4,6 +4,7 @@ function Join() {
   return (
     <div className="join">
       <p className="j-title">Urban Nest</p>
+      <p className="fancy">    bringing your     vision of home to life</p>
       <div className="j-content">
         <h1>join the list</h1>
         <div className="j-inputs">

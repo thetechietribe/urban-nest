@@ -195,9 +195,7 @@ input::placeholder {
   h1 {
     text-transform: capitalize;
     padding: 25px 0;
-    font: normal normal lighter 38px/1.4em
-        wfont_258105_834038867c27494a9e9c2b5b3c7f7eeb,
-      wf_834038867c27494a9e9c2b5b3, orig_austin_news_headline_web_light;
+    font: normal normal lighter 38px/1.4em wfont_258105_834038867c27494a9e9c2b5b3c7f7eeb,wf_834038867c27494a9e9c2b5b3,orig_austin_news_headline_web_light;
   }
 }
 .j-inputs {

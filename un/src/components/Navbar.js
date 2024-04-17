@@ -9,7 +9,7 @@ function Navbar() {
           <li><a href='/services'>services</a></li>
         </ul>
         <h1 className="nav-logo"><a href='/'>Urban Nest</a></h1>
-        <ul className="opts opts-2">
+        <ul className="opts-2">
           <li><a href='/featured-work'>featured work</a></li>
           <li><a href='contact'>contact</a></li>
         </ul>
