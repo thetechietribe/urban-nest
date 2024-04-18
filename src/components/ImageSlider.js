@@ -46,7 +46,7 @@ export default () => {
     // </Box>
     <Glider draggable  slidesToShow={4} slidesToScroll={1} Autoplay={true} duration={1} style={{"height":"600px"}}>
       {images.map((image, index) => (
-        <Image src={image} height={600} width={450} style={{"margin-right":"10px","height":"600px"}} />
+        <Image key={index} src={image} height={600} width={450} style={{marginRight:"10px","height":"600px"}} />
       ))}
     </Glider>
   );
