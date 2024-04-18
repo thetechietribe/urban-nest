@@ -149,7 +149,7 @@ a {
   .designers {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     margin: 50px 0;
     .designer {
       text-align: center;
@@ -233,11 +233,13 @@ a {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 120px;
   h6 {
     font-size: 25px;
     font-family: playfair display;
     font-weight: 100;
+    margin-top: 44px;
+    margin-bottom: 10px;
   }
   p {
     text-align: center;

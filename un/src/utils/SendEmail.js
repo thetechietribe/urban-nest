@@ -10,7 +10,7 @@ export const sendEmail = (values) => {
     message: "",
   };
   emailjs
-    .send("service_a62wvzu", "template_3akfszj", params, "AhBCp-gLoe_SHzp3o")
+    .send(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, params, process.env.NEXT_PUBLIC_KEY)
     .then(
       (response) => {
         console.log("SUCCESS!", response.status, response.text);
