@@ -18,7 +18,7 @@ export default function About3() {
             window treatments she helped us choose. They make such a
             difference."
           </p>
-          <h3>Toni / Custom Window Treatments</h3>
+          <h3>Toni   /   Custom Window Treatments</h3>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
-import React from "react";
+import Image from "next/image";
+import Demo1 from "../../public/Images/Demo.webp";
 
 function Demo() {
   return (
@@ -19,10 +20,7 @@ function Demo() {
         </div>
       </div>
       <div className="right-col">
-        <img
-          src="https://static.wixstatic.com/media/a3a7c5_1d8f43273122420591a1a51dbdf2fec3~mv2.jpg/v1/fill/w_962,h_607,al_b,q_85,usm_0.66_1.00_0.01,enc_auto/a3a7c5_1d8f43273122420591a1a51dbdf2fec3~mv2.jpg"
-          alt=""
-        />
+        <Image src={Demo1} width={720} height={610} />
       </div>
     </div>
   );

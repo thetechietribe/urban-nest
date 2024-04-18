@@ -14,7 +14,7 @@ a {
   border-bottom: black 0.5px solid;
 }
 .container {
-  margin: 36px 153px;
+  margin: 20px 153px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -83,9 +83,9 @@ a {
 .con-1 {
   display: flex;
   justify-content: space-between;
-  width: 70%;
-  margin: auto;
-  margin-top: 70px;
+  /* width: 70%; */
+  margin: 0 220px;
+  margin-top: 125px;
   border-bottom: 0.5px black solid;
   .left {
     font-size: 30px;

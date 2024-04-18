@@ -2,11 +2,9 @@ import emailjs from "emailjs-com";
 
 export const sendReply = (values) => {
   const params = {
-    first_name: values.fname,
-    last_name: values.lname,
-    email: values.email,
+    to_name: values.fname+''+values.lname,
+    reply_to: values.email,
     number: values.phone,
-    org: "Urban Nest",
     message: values.msg,
   };
   emailjs

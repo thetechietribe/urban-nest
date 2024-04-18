@@ -4,7 +4,7 @@ import Interior from "../../public/Images/Interior.webp";
 export default function Service3() {
   return (
     <div className="s-3">
-      <Image src={Interior} width={745} height={978} />
+      <Image src={Interior} width={720} height={978} />
       <div>
         <h1>Hear from a few of our clients.... are you ready?</h1>
         <div className="gs">
