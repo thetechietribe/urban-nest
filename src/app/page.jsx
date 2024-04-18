@@ -1,3 +1,4 @@
+'use client'
 import Navbar from '@/components/Navbar'
 import ImageSlider from '@/components/ImageSlider'
 import Message from '@/components/Message'
