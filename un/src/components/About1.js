@@ -4,10 +4,13 @@ function About1() {
   return (
     <div className="ab-1">
       <div>
-        <h1>
-          Crafting the feeling of home through creativity, collaboration, and a
+      {/* <h3> */}
+      <span>
+          Crafting the feeling of home through creativity, collaboration and a
           comfortable sense of sophistication.
-        </h1>
+        </span>
+      {/* </h3> */}
+       
         <p>
           Our mission is to provide our clients with an exceptional level of
           service and communication, working closely with each client to ensure

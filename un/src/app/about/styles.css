@@ -66,20 +66,27 @@ a {
 .ab-1 {
   border-top: 0.5px black solid;
   border-bottom: 0.5px black solid;
-  margin-bottom: 60px;
   div {
-    width: 55%;
-    margin: 100px auto;
+    margin: 100px 300px;
     text-align: center;
-    h1 {
-      font-family: Playful Display;
+    span {
+      width: 862px;
+      text-align: center;
+      font-family: "Austin News Headline";
       font-weight: 100;
+      font-size: 36px;
+      color: #2F2C29;
+      letter-spacing: -1px;
+      line-height: 1.4em;
+      width: 820px;
+      margin-bottom: 27px;
     }
     p {
+      text-align: center;
       font-size: 20px;
-      line-height: 1.6em;
-      font-weight: 400;
-      margin-top: 20px;
+      line-height: 1.2em;
+      margin-bottom: 66px;
+      letter-spacing: 2px;
     }
   }
 }
