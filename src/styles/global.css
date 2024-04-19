@@ -59,6 +59,14 @@ a {
   font-family: "The Austin";
   margin-bottom: 20px;
 }
+
+.nav-logo-lg a {
+  font-size: 60px;
+  font-weight: 100;
+  font-family: "The Austin";
+  margin-bottom: 20px;
+}
+
 .menu-bars {
   display: none;
 }
@@ -152,7 +160,7 @@ a {
   margin-left: 10%;
   display: flex;
   position: relative;
-  height: 650px;
+  min-height: 650px;
 }
 .left-col {
   padding: 50px 0;
@@ -216,11 +224,12 @@ a {
   display: flex;
   padding: 0 4%;
   padding-bottom: 50px;
-  border-bottom: 1px black solid;
 }
 .video {
-  height: 300px;
+  height: 200px;
   margin-right: 20px;
+  width: 200px;
+  object-fit:cover;
 }
 .join {
   padding: 20px;
@@ -300,15 +309,18 @@ a {
     cursor: pointer;
   }
 }
-@media screen and (max-width: 1200px) {
-  .opts {
-    display: none;
-  }
+@media screen and (max-width: 700px) {
   .nav-logo {
     margin: auto;
+    
   }
+  .nav-logo-lg a {
+    display: none;
+  }
+
   .container {
-    width: 80%;
+    width: 100%;
+    margin: 10px 10%;
   }
   .menu-bars {
     display: flex;
@@ -318,15 +330,108 @@ a {
     width: 50px;
   }
   .msg {
-    width: 60%;
+    width: 70%;
     margin-top: 20px;
   }
+  .msg-title {
+    font-size: 28px;
+  }
+  .msg-content {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .msg-link {
+    font-size: 20px;
+  }
   .features {
+    width: 80%;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .feature {
+    width: 98%;
+    margin-bottom: 25px;
+  }
+  .transparent {
+    height: 400px;
+  }
+  .demo{
+    display: none;    
+  }
+  .video{
+    height: 50px;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .opts,
+  .opts-2 {
+    display: none;
+  }
+  .nav-logo {
+    margin: auto;
+  }
+  .nav-logo-lg a {
+    display: none;
+  }
+  .glider-contain{
+    margin-top: 90px !important;
+  }
+  .container {
+    width: 100%;
+    margin: 10px 10%;
+  }
+  .menu-bars {
+    display: flex;
+  }
+  .menu-icon {
+    height: 50px;
+    width: 50px;
+  }
+  .msg {
+    width: 70%;
+    margin-top: 20px;
+  }
+  .msg-title {
+    font-size: 28px;
+  }
+  .msg-content {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .msg-link {
+    font-size: 20px;
+  }
+  .features {
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   .feature {
     width: 98%;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+  }
+  .demo{
+    margin-left: 20px;
+  }
+  .demo-title{
+    font-size: 33px;
+  }
+  .demo-cat{
+    font-size: 16px;
+  }
+  .demo-content{
+    font-size: 14px;
+    width: 300px;
+  }
+  .demo-socials{
+    font-size: 16px;
+  }
+  .video{
+    margin-top: 50px;
+    height: 100px;
+  }
+  .right-col{
+    width: 50%;
   }
 }

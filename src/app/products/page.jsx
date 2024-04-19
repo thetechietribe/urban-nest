@@ -1,18 +1,17 @@
-import "./contact.css";
-import Contact from "@/components/Contact/Contact";
+import "./products.css";
 import Navbar from "@/components/Universal/Navbar";
 import Join from "@/components/Universal/Join";
 import Services from "@/components/Universal/Services";
 import Copyright from "@/components/Universal/Copyright";
-
-export default function ContactPage() {
+import Products from "@/components/Products/Products"
+export default function featuredPage() {
   return (
     <>
       <Navbar />
-      <Contact />
-      <Join/>
-      <Services/>
-      <Copyright/>
+      <Products />
+      <Join />
+      <Services />
+      <Copyright />
     </>
   );
 }

@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Sweet Sans Pro";
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.navbar {
+  display: flex;
+  background-color: white;
+  border-bottom: black 0.5px solid;
+}
+.container {
+  margin: 20px 153px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.opts {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0px;
+}
+.opts-2 {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0px;
+}
+.opts-2 li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  margin-left: 50px;
+}
+.opts li {
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  margin-right: 50px;
+  font-weight: 400;
+}
+.opts li a:hover,
+.opts-2 li a:hover {
+  color: #b2a595;
+}
+.nav-logo a {
+  font-size: 60px;
+  font-weight: 100;
+  font-family: "The Austin";
+  margin-bottom: 20px;
+}
+.menu-bars {
+  display: none;
+}
+.ab-1 {
+  border-top: 0.5px black solid;
+  border-bottom: 0.5px black solid;
+  div {
+    margin: 0 300px;
+    margin-top: 100px;
+    text-align: center;
+    span {
+      text-align: center;
+      font-family: "Austin News Headline";
+      font-weight: 100;
+      font-size: 36px;
+      color: #2F2C29;
+      letter-spacing: -1px;
+      line-height: 1.4em;
+      width: 820px;
+    }
+    p {
+      text-align: center;
+      font-size: 20px;
+      line-height: 1.2em;
+      letter-spacing: 1px;
+      word-spacing: .1em;
+      margin: 40px 0;
+    }
+  }
+}
+.ab-2 {
+  div {
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .founder {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    .left {
+      margin-right: 20px;
+      .f-title {
+        border-bottom: 0.5px black solid;
+        margin-bottom: 20px;
+        margin-left: 0;
+        width: 300px;
+        margin-right: auto;
+        text-align: left;
+        padding: 0;
+        h1 {
+          font-family: serif;
+          font-weight: 100;
+          font-size: 30px;
+        }
+        p {
+          font-size: 10px;
+          font-weight: 400;
+          letter-spacing: .1em;
+          margin-top: 20px;
+        }
+      }
+      p,
+      em {
+        font-weight: 400;
+        padding-bottom: 20px;
+        line-height: 25px;
+        span {
+          font-family: the austin;
+        }
+      }
+      .pd-20 {
+        padding: 10px;
+      }
+    }
+    .right {
+      width: 40%;
+      padding: 0;
+      margin: 0;
+      p {
+        font-size: 12px;
+        padding-top: 10px;
+        span {
+          font-family: The Austin;
+        }
+      }
+    }
+  }
+  .designers {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px 0;
+    .designer {
+      text-align: center;
+      width: 242px;
+      height: 100%;
+      /* position: absolute; */
+      top: 0;
+      h1 {
+        font-family: serif;
+        font-size: 25px;
+        font-weight: 400;
+        margin: 10px 0;
+      }
+      h6{
+        margin: 10px 0;
+        font-size: 17px;
+        font-weight: 400;
+      }
+      p{
+        line-height: 1.6em;
+        text-align: center;
+        font-weight: 300;
+      }
+    }
+  }
+}
+.ab-3 {
+  display: flex;
+  justify-content: space-between;
+  .client {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    h1 {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    p {
+      margin: 50px auto;
+      width: 400px;
+      font-size: 25px;
+      font-weight: 300;
+    }
+    h3{
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  }
+}
+.ab-4 {
+  width: 70%;
+  margin: 100px auto;
+  text-align: center;
+  h1{
+    font-weight: 300;
+    font-family: serif;
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+  .values {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      margin: 30px 0;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    p {
+      width: 250px;
+      line-height: 1.6em;
+      font-weight: 300;
+
+    }
+  }
+}
+.ab-5 {
+  width: 87.5%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 120px;
+  h6 {
+    font-size: 25px;
+    font-family: playfair display;
+    font-weight: 100;
+    margin-top: 44px;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: center;
+    width: 120px;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 0;
+    border-bottom: #000 0.5px solid;
+    cursor: pointer;
+    padding-top: 10px;
+
+  }
+  p:hover {
+    color: #b2a595;
+  }
+}
+.join {
+  padding: 20px;
+  text-align: center;
+  border-top: black 1px solid;
+  .fancy {
+    font-family: "the austin";
+    width: 250px;
+    font-size: 33px;
+    margin: 20px auto;
+    letter-spacing: 0px;
+  }
+}
+.j-title {
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.j-content {
+  h1 {
+    text-transform: capitalize;
+    padding: 25px 0;
+    font: normal normal lighter 38px/1.4em
+        wfont_258105_834038867c27494a9e9c2b5b3c7f7eeb,
+      wf_834038867c27494a9e9c2b5b3, orig_austin_news_headline_web_light;
+  }
+}
+.j-inputs {
+  display: flex;
+  justify-content: center;
+  .j-inp {
+    width: 280px;
+    height: 30px;
+    padding: 3px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+}
+.subscribe {
+  width: 150px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 9px;
+  background: white;
+  border: black 1px solid;
+  cursor: pointer;
+}
+.subscribe:hover {
+  color: #b2a595;
+}
+.services {
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  width: 945px;
+}
+.service {
+  font-size: 12px;
+  cursor: pointer;
+}
+.service:hover {
+  color: #b2a595;
+}
+.copy {
+  font-size: 14px;
+  text-align: center;
+  color: rgb(178, 165, 149);
+  margin-bottom: 50px;
+}
+.policies {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  p {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .opts,
+  .opts-2 {
+    display: none;
+  }
+  .nav-logo {
+    margin: auto;
+  }
+  .container {
+    width: 100%;
+    margin: 10px 10%;
+  }
+  .menu-bars {
+    display: flex;
+  }
+  .menu-icon {
+    height: 50px;
+    width: 50px;
+  }
+  .ab-1{
+    div{
+      margin-left: 150px;
+      margin-right: 150px;
+      span{
+        font-size: 30px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 1.1rem;
+        letter-spacing: 0;
+      }
+    }
+  }
+  .ab-2{
+    div{
+      width: 85%;
+      .left{
+        order: 1;
+        margin: 0;
+        width: 50%;
+        p,em{
+          padding-bottom: 10px;
+          line-height: 20px;
+        }
+        .pd-20{
+          display: none;
+        }
+      }
+      .right{
+        width: 100%;
+        margin-right: 20px;
+
+      }
+    }
+    .designers{
+      flex-direction: row;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .ab-1{
+    div{
+      margin-left: 10%;
+      margin-right: 10%;
+      span{
+        font-size: 24px;
+      }
+    }
+  }
+  .ab-2{
+    div{
+      width:90%;
+      .founder{
+        flex-direction: column !important;
+        .left,.right{
+          width: 100%;
+        }
+      }
+      .designers{
+        flex-direction: column;
+      }
+    }
+  }
+  .ab-3{
+    flex-direction: column;
+    .client{
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  .ab-4{
+    .values{
+      flex-direction: column;
+    }
+  }
+  .ab-5{
+    flex-direction: column;
+    div{
+      margin-bottom: 20px;
+    }
+  }
+}

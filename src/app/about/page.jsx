@@ -1,27 +1,26 @@
-import Navbar from '@/components/Navbar'
-import './styles.css'
-import About1 from '@/components/About1'
-import About2 from '@/components/About2'
-import About3 from '@/components/About3'
-import About4 from '@/components/About4'
-import About5 from '@/components/About5'
-import Join from '@/components/Join'
-import Services from '@/components/Services'
-import Copyright from '@/components/Copyright'
+import "./about.css";
+import Navbar from "@/components/Universal/Navbar";
+import Mission from "@/components/About/Mission";
+import Staff from "@/components/About/Staff";
+import Feedback from "@/components/About/Feedback";
+import Qualities from "@/components/About/Qualities";
+import Features from "@/components/About/Features";
+import Join from "@/components/Universal/Join";
+import Services from "@/components/Universal/Services";
+import Copyright from "@/components/Universal/Copyright";
 
-export default function AboutPage(){
-    
-    return(
-        <>
-        <Navbar/>
-        <About1/>
-        <About2/>
-        <About3/>
-        <About4/>
-        <About5/>
-        <Join/>
-        <Services/>
-        <Copyright/>
-        </>
-    )
-};
+export default function AboutPage() {
+  return (
+    <>
+      <Navbar />
+      <Mission />
+      <Staff />
+      <Feedback />
+      <Qualities />
+      <Features />
+      <Join />
+      <Services />
+      <Copyright />
+    </>
+  );
+}
