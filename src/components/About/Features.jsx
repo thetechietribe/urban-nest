@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ft from "../../public/Images/Features.webp";
-import ins from "../../public/Images/Inspired.webp";
-export default function About5() {
+import ft from "../../../public/Images/Features.webp";
+import ins from "../../../public/Images/Inspired.webp";
+export default function Features() {
   return (
     <div className="ab-5">
       <div>

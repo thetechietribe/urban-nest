@@ -1,12 +1,8 @@
 "use client";
 import Image from "next/image";
-import cl from "../../public/Images/ClientLove.webp";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import "swiper/css/navigation";
-import "swiper/css";
+import cl from "../../../public/Images/ClientLove.webp";
 
-export default function About3() {
+export default function Feedback() {
   return (
     <div className="ab-3">
       <Image src={cl} width={721} height={646} />

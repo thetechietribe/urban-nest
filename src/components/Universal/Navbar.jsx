@@ -10,7 +10,7 @@ function Navbar() {
         </ul>
         <h1 className="nav-logo"><a href='/'>Urban Nest</a></h1>
         <ul className="opts-2">
-          <li><a href='/featured-work'>featured work</a></li>
+          <li><a href='/products'>products</a></li>
           <li><a href='contact'>contact</a></li>
         </ul>
         <div className="menu-bars">

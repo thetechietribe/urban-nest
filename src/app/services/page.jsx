@@ -1,11 +1,11 @@
-import "./styles.css";
-import Navbar from "@/components/Navbar";
-import Service1 from "@/components/Service1";
-import Service2 from "@/components/Service2";
-import Service3 from "@/components/Service3";
-import Join from "@/components/Join";
-import Services from "@/components/Services";
-import Copyright from "@/components/Copyright";
+import "./services.css";
+import Navbar from "@/components/Universal/Navbar";
+import Service1 from "@/components/Services/Intro";
+import Service2 from "@/components/Services/Services";
+import Service3 from "@/components/Services/Testimonials";
+import Join from "@/components/Universal/Join";
+import Services from "@/components/Universal/Services";
+import Copyright from "@/components/Universal/Copyright";
 
 export default function ServicePage() {
   return (

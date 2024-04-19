@@ -1,13 +1,14 @@
 import Image from "next/image";
-import Founder from "../../public/Images/Founder.webp";
-import Des1 from "../../public/Images/Des1.webp";
-import Des2 from "../../public/Images/Des2.webp";
-import Des3 from "../../public/Images/Des3.webp";
+import Founder from "../../../public/Images/Founder.webp";
+import Des1 from "../../../public/Images/Des1.webp";
+import Des2 from "../../../public/Images/Des2.webp";
+import Des3 from "../../../public/Images/Des3.webp";
+import { Container } from "@mui/material";
 
-function About2() {
+export default function Staff() {
   return (
     <div className="ab-2">
-      <div>
+      <Container>
         <div className="founder">
           <div className="left">
             <div className="f-title">
@@ -102,9 +103,7 @@ function About2() {
             </p>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }
-
-export default About2;

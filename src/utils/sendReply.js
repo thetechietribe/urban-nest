@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 export const sendReply = (values) => {
   const params = {
     from_name: "TechieTribe",
-    to_name: values.fname+''+values.lname,
+    to_name: values.fname,
     reply_to: values.email,
     number: values.phone,
     message: values.msg,

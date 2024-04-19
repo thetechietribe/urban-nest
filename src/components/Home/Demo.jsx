@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Demo1 from "../../public/Images/Demo.webp";
+import Demo1 from "../../../public/Images/Demo.webp";
 
 function Demo() {
   return (

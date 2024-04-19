@@ -125,12 +125,13 @@ a {
     font-family: playfair display;
     font-weight: 400;
     line-height: 1.6em;
+    margin-bottom: .8em;
   }
   p {
     font-size: 20px;
     font-weight: 300;
     line-height: 1.6em;
-    margin-top: 1.6em;
+    margin-top: .8em;
     width: 440px;
   }
   .git {
@@ -169,13 +170,13 @@ a {
   display: flex;
   padding-bottom: 50px;
   div {
-    width: 700px;
-    margin-left: 5px;
+    width: 650px;
+    margin-left: 15px;
+    padding: 20px 0;
     h1 {
       font-family: playfair display;
       font-weight: 400;
       font-size: 30px;
-      margin-top: 20px;
     }
     .gs {
       margin: 20px 0px;
@@ -205,10 +206,8 @@ a {
       font-style: italic;
       font-size: 20px;
       font-weight: 300;
-      line-height: 1.6em;
-    }
-    .m20 {
-      margin: 15px 0;
+      line-height: 1.4em;
+      padding-top: 1em;
     }
   }
 }
@@ -288,5 +287,117 @@ a {
   p {
     margin-right: 10px;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .s-1{
+    flex-direction: column;
+    height: auto;
+    margin-left: 0 !important;
+    .left,.right{
+      width: 100% !important;
+      height: 100% !important;
+      margin: 50px 0;
+    }
+    .left{
+      margin-left: 50px !important;
+    }
+  }
+  .s-2{
+    flex-direction: column;
+    margin: 100px 0;
+    width: 90% !important;
+    .git{
+      margin-bottom: 20px;
+      width: 120px !important;
+      margin-left: 20px;
+    }
+  }
+  .s-3{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .opts,
+  .opts-2 {
+    display: none;
+  }
+  .nav-logo {
+    margin: auto;
+  }
+  .container {
+    width: 100%;
+    margin: 10px 10%;
+  }
+  .menu-bars {
+    display: flex;
+  }
+  .menu-icon {
+    height: 50px;
+    width: 50px;
+  }
+  .s-1{
+    margin-left: 40px;
+    .left{
+      margin-left:0px ;
+      width: 50%;
+      h1{
+        font-size: 26px;
+      }
+      h2{
+        font-size: 14px;
+      }
+      p{
+        font-size: 16px;
+        width: 90%;
+      }
+      div{
+        width: 100px;
+        h6{
+          font-size: 14px;
+        }
+      }
+    }
+    .right{
+      width: 50%;
+    }
+  }
+  .s-2{
+    margin: 50px 60px;
+    h1{
+      font-size: 24px;
+      line-height: 1.4em;
+      width: 90%;
+    }
+    p{
+      font-size: 16px;
+      width: 90%;
+    }
+    .git{
+      width: 150px;
+      h4{
+        font-size: 18px;
+      }
+    }
+  }
+  .s-3{
+    div{
+      h1{
+        font-size: 24px;
+      }
+      .gs{
+        h4{
+          font-size: 16px;
+        }
+      }
+      p{
+        font-size: 14px;
+      }
+      em{
+        font-size: 14px;
+      }
+    }
   }
 }

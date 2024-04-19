@@ -1,4 +1,4 @@
-function Service2() {
+export default function Services() {
   return (
     <div className="s-2">
       <div className="left">
@@ -92,5 +92,3 @@ function Service2() {
     </div>
   );
 }
-
-export default Service2;

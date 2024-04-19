@@ -1,7 +1,7 @@
 import Image from "next/image";
-import services from "../../public/Images/Services.webp";
+import services from "../../../public/Images/Services.webp";
 
-function Service1() {
+export default function Intro() {
   return (
     <div className="s-1">
       <div className="left">
@@ -20,5 +20,3 @@ function Service1() {
     </div>
   );
 }
-
-export default Service1;

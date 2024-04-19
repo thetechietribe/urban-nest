@@ -103,15 +103,19 @@ a {
     padding: 0;
     margin: 0;
     .left {
-      width: 50%;
+      margin-right: 20px;
       .f-title {
-        margin: 0;
         border-bottom: 0.5px black solid;
-        width: 100%;
         margin-bottom: 20px;
+        margin-left: 0;
+        width: 300px;
+        margin-right: auto;
+        text-align: left;
+        padding: 0;
         h1 {
           font-family: serif;
           font-weight: 100;
+          font-size: 30px;
         }
         p {
           font-size: 10px;
@@ -333,5 +337,108 @@ a {
   p {
     margin-right: 10px;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .opts,
+  .opts-2 {
+    display: none;
+  }
+  .nav-logo {
+    margin: auto;
+  }
+  .container {
+    width: 100%;
+    margin: 10px 10%;
+  }
+  .menu-bars {
+    display: flex;
+  }
+  .menu-icon {
+    height: 50px;
+    width: 50px;
+  }
+  .ab-1{
+    div{
+      margin-left: 150px;
+      margin-right: 150px;
+      span{
+        font-size: 30px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 1.1rem;
+        letter-spacing: 0;
+      }
+    }
+  }
+  .ab-2{
+    div{
+      width: 85%;
+      .left{
+        order: 1;
+        margin: 0;
+        width: 50%;
+        p,em{
+          padding-bottom: 10px;
+          line-height: 20px;
+        }
+        .pd-20{
+          display: none;
+        }
+      }
+      .right{
+        width: 100%;
+        margin-right: 20px;
+
+      }
+    }
+    .designers{
+      flex-direction: row;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .ab-1{
+    div{
+      margin-left: 10%;
+      margin-right: 10%;
+      span{
+        font-size: 24px;
+      }
+    }
+  }
+  .ab-2{
+    div{
+      width:90%;
+      .founder{
+        flex-direction: column !important;
+        .left,.right{
+          width: 100%;
+        }
+      }
+      .designers{
+        flex-direction: column;
+      }
+    }
+  }
+  .ab-3{
+    flex-direction: column;
+    .client{
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  .ab-4{
+    .values{
+      flex-direction: column;
+    }
+  }
+  .ab-5{
+    flex-direction: column;
+    div{
+      margin-bottom: 20px;
+    }
   }
 }

@@ -1,7 +1,7 @@
 "use client";
 import { sendReply } from "@/utils/sendReply";
 
-function Contact() {
+export default function Contact() {
   const params = {
     fname: "",
     lname: "",
@@ -62,5 +62,3 @@ function Contact() {
     </div>
   );
 }
-
-export default Contact;

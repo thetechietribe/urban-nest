@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Interior from "../../public/Images/Interior.webp";
+import Interior from "../../../public/Images/Interior.webp";
 
-export default function Service3() {
+export default function Testimonials() {
   return (
     <div className="s-3">
       <Image src={Interior} width={720} height={978} />

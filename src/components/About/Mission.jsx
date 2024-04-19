@@ -1,6 +1,4 @@
-import React from "react";
-
-function About1() {
+export default function Mission() {
   return (
     <div className="ab-1">
       <div>
@@ -23,5 +21,3 @@ function About1() {
     </div>
   );
 }
-
-export default About1;

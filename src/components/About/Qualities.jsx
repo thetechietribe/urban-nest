@@ -1,4 +1,4 @@
-export default function About4() {
+export default function Qualities() {
   return (
     <div className="ab-4">
       <h1>Our Values</h1>

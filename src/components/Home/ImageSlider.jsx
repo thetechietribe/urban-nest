@@ -5,11 +5,11 @@ import Glider from "react-glider";
 import "glider-js/glider.min.css";
 import "swiper/css";
 import Image from "next/image";
-import Image1 from "../../public/Images/Image1.webp";
-import Image2 from "../../public/Images/Image2.webp";
-import Image3 from "../../public/Images/Image3.webp";
-import Image4 from "../../public/Images/Image4.webp";
-import Image5 from "../../public/Images/Image5.webp";
+import Image1 from "../../../public/Images/Image1.webp";
+import Image2 from "../../../public/Images/Image2.webp";
+import Image3 from "../../../public/Images/Image3.webp";
+import Image4 from "../../../public/Images/Image4.webp";
+import Image5 from "../../../public/Images/Image5.webp";
 import { Box } from "@mui/material";
 
 export default () => {
@@ -44,9 +44,42 @@ export default () => {
     //     ))}
     //   </Swiper>
     // </Box>
-    <Glider draggable  slidesToShow={4} slidesToScroll={1} Autoplay={true} duration={1} style={{"height":"600px"}}>
+    <Glider
+      draggable
+      slidesToShow={1}
+      slidesToScroll={1}
+      responsive={[
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+          },
+        },
+      ]}
+      Autoplay={true}
+      duration={1}
+      style={{ height: "600px" }}
+    >
       {images.map((image, index) => (
-        <Image key={index} src={image} height={600} width={450} style={{marginRight:"10px","height":"600px"}} />
+        <Image
+          key={index}
+          src={image}
+          height={600}
+          width={450}
+          style={{ marginRight: "10px", height: "600px" }}
+        />
       ))}
     </Glider>
   );
