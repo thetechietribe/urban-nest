@@ -1,5 +1,5 @@
 {
-  "name": "un",
+  "name": "urban-nest",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.1.4"
+    "eslint-config-next": "14.1.3",
+    "file-loader": "^6.2.0"
   }
 }
