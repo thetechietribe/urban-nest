@@ -1,4 +1,20 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+export default {
+  webpack: (config, { isServer }) => {
+    config.module.rules.push({
+      test: /\.(mp4|webm)$/,
+      use: {
+        loader: "file-loader",
+        options: {
+          publicPath: "/_next",
+          name: "static/media/[name].[hash].[ext]",
+        },
+      },
+    });
 
-export default nextConfig;
+    if (isServer) {
+      config.externals.push("fs");
+    }
+
+    return config;
+  },
+};
