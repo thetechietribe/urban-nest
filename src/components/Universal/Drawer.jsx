@@ -19,6 +19,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import { Link } from '@mui/material';
 
 const drawerWidth = 240;
 
@@ -89,7 +90,7 @@ export default function PersistentDrawerRight() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} sx={{background:'none'}}>
+      <AppBar position="fixed" open={open} sx={{background:'#fff',boxShadow:"none"}}>
         <Toolbar >
         <h1 className="nav-logo"><a href='/'>Urban Nest</a></h1>
           <IconButton
@@ -106,10 +107,10 @@ export default function PersistentDrawerRight() {
 
       <Drawer
         sx={{
-          width: drawerWidth,
+          width: "320px",
           flexShrink: 0,
           '& .MuiDrawer-paper': {
-            width: drawerWidth,
+            width: "320px",
           },
         }}
         variant="persistent"
@@ -123,13 +124,10 @@ export default function PersistentDrawerRight() {
         </DrawerHeader>
         <Divider />
         <List>
-          {['Products', 'Services', 'About', 'Contact'].map((text, index) => (
+          {['products', 'services', 'about', 'contact'].map((text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
+                <Link sx={{textTransform:"uppercase",color:"black",textDecoration:"none"}} href={`/${text}`}>{text}</Link>
               </ListItemButton>
             </ListItem>
           ))}

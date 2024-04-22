@@ -117,7 +117,7 @@ a {
     input,
     select,
     textarea {
-      width: 440px;
+      width: 40%;
       min-height: 40px;
       font-size: 21px;
       line-height: 1.6em;
@@ -148,6 +148,7 @@ a {
       width: 440px;
       height: 100%;
       align-self: end;
+      margin-left: 30%;
       button{
         width: 220px;
         height: 40px;
@@ -252,16 +253,7 @@ input::placeholder {
     cursor: pointer;
   }
 }
-@media screen and (max-width: 700px) {
-  .con-1{
-    flex-direction: column;
-    .right{
-      margin-left: 0 !important;
-      margin-bottom: 20px;
-    }
-  }
-  
-}
+
 
 @media screen and (max-width: 1200px) {
   .opts,
@@ -299,6 +291,20 @@ input::placeholder {
       }
     }
   }
+}
+@media screen and (max-width: 700px) {
+  .con-1{
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    .left{
+      width: auto;
+    }
+    .right{
+      margin-left: 0 !important;
+      margin-bottom: 20px;
+    }
+  }
   .con-2{
     width: 90%;
     .row{
@@ -306,9 +312,25 @@ input::placeholder {
       width: 100%;
       margin: auto;
       align-items: center;
+      input,textarea{
+        width: 100%;
+      }
     }
     textarea{
       margin-bottom: 30px;
+      width: 100%;
+    }
+    .row-4{
+      .btn-wrapper{
+        margin: auto !important;
+      }
     }
   }
+  .j-inputs{
+    align-items: center;
+  }
+  .services{
+    display: none;
+  }
+  
 }

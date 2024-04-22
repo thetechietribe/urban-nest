@@ -420,6 +420,9 @@ a {
       }
       .designers{
         flex-direction: column;
+        .designer{
+          width: auto;
+        }
       }
     }
   }
@@ -427,12 +430,16 @@ a {
     flex-direction: column;
     .client{
       width: 100%;
+      height: auto;
       margin-top: 30px;
     }
   }
   .ab-4{
     .values{
       flex-direction: column;
+      p{
+        margin: auto;
+      }
     }
   }
   .ab-5{
@@ -440,5 +447,12 @@ a {
     div{
       margin-bottom: 20px;
     }
+  }
+  .j-inputs{
+    margin: auto;
+    align-items: center;
+  }
+  .services{
+    display: none;
   }
 }

@@ -70,7 +70,7 @@ export default () => {
       ]}
       Autoplay={true}
       duration={1}
-      style={{ height: "600px" }}
+      style={{ height: "600px"}}
     >
       {images.map((image, index) => (
         <Image

@@ -142,16 +142,7 @@ a {
     cursor: pointer;
   }
 }
-@media screen and (max-width: 700px) {
-  .products-wrapper{
-    display: flex !important;
-    flex-direction: column !important;
-    width: 350px;
-    padding: 20px;
-    margin: auto;
-  }
-  
-}
+
 
 @media screen and (max-width: 1200px) {
   .opts,
@@ -174,5 +165,20 @@ a {
   }
   .products-wrapper{
     grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .products-wrapper{
+    display: flex !important;
+    flex-direction: column !important;
+    width: 350px;
+    padding: 20px;
+    margin: auto;
+  }
+  .j-inputs{
+    align-items: center;
+  }
+  .services{
+    display: none;
   }
 }

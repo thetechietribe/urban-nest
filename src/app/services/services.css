@@ -64,7 +64,7 @@ a {
   display: none;
 }
 .s-1 {
-  height: 630px;
+  min-height: 630px;
   margin-left: 76px;
   display: flex;
   justify-content: space-between;
@@ -290,34 +290,7 @@ a {
   }
 }
 
-@media screen and (max-width: 700px) {
-  .s-1{
-    flex-direction: column;
-    height: auto;
-    margin-left: 0 !important;
-    .left,.right{
-      width: 100% !important;
-      height: 100% !important;
-      margin: 50px 0;
-    }
-    .left{
-      margin-left: 50px !important;
-    }
-  }
-  .s-2{
-    flex-direction: column;
-    margin: 100px 0;
-    width: 90% !important;
-    .git{
-      margin-bottom: 20px;
-      width: 120px !important;
-      margin-left: 20px;
-    }
-  }
-  .s-3{
-    flex-direction: column;
-  }
-}
+
 
 @media screen and (max-width: 1200px) {
   .opts,
@@ -399,5 +372,61 @@ a {
         font-size: 14px;
       }
     }
+  }
+}
+@media screen and (max-width: 700px) {
+  .s-1{
+    flex-direction: column;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+    .left,.right{
+      width: 99% ;
+      height: 99% ;
+      margin: 50px 0;
+    }
+    .left{
+      margin-left: 20px ;
+    }
+  }
+  .s-2{
+    flex-direction: column;
+    margin: 100px auto;
+    width: 90% ;
+    h1{
+      width: 70%;
+    }
+    p{
+      width: 70%;
+      font-size: 14px;
+    }
+    .git{
+      margin-bottom: 20px;
+      width: 120px ;
+      margin-left: 0;
+    }
+  }
+  .s-3{
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    div{
+      width: 90%;
+    .gs{
+      width: 150px;
+    }
+    p,em{
+      font-size: 12px;
+      width: 100%;
+    }
+    }
+    
+  }
+  .j-inputs{
+    flex-direction: column;
+    align-items:  center;
+  }
+  .services{
+    display: none;
   }
 }
