@@ -1,16 +1,16 @@
 "use client";
 // import React, { useRef, useState } from "react";
 
-import Prod1 from "../../../public/Images/Products/Product1.jpeg";
-import Prod2 from "../../../public/Images/Products/Product2.jpeg";
-import Prod3 from "../../../public/Images/Products/Product3.jpeg";
-import Prod4 from "../../../public/Images/Products/Product4.jpeg";
-import Prod5 from "../../../public/Images/Products/Product5.jpeg";
-import Prod6 from "../../../public/Images/Products/Product6.jpeg";
-import Prod7 from "../../../public/Images/Products/Product7.jpeg";
-import Prod8 from "../../../public/Images/Products/Product8.jpeg";
-import Prod9 from "../../../public/Images/Products/Product9.jpeg";
-import Prod10 from "../../../public/Images/Products/Product10.jpg";
+import Prod1 from "../../../public/Images/Products/Product1/Product1.jpeg";
+import Prod2 from "../../../public/Images/Products/Product2/Product2.jpeg";
+import Prod3 from "../../../public/Images/Products/Product3/Product3.jpeg";
+import Prod4 from "../../../public/Images/Products/Product4/Product4.jpeg";
+import Prod5 from "../../../public/Images/Products/Product5/Product5.jpeg";
+import Prod6 from "../../../public/Images/Products/Product6/Product6.jpeg";
+import Prod7 from "../../../public/Images/Products/Product7/Product7.jpeg";
+import Prod8 from "../../../public/Images/Products/Product8/Product8.jpeg";
+import Prod9 from "../../../public/Images/Products/Product9/Product9.jpeg";
+import Prod10 from "../../../public/Images/Products/Product10/Product10.jpg";
 // import { Box, Container, Grid } from "@mui/material";
 // import Image from "next/image";
 // export default function Products() {
@@ -157,7 +157,7 @@ import Prod10 from "../../../public/Images/Products/Product10.jpg";
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 
-import { Box, Slide, Typography } from "@mui/material";
+import { Box, Link, Slide, Typography } from "@mui/material";
 import CallMadeTwoToneIcon from "@mui/icons-material/CallMadeTwoTone";
 const styles = {
   mainContainer: {
@@ -230,7 +230,7 @@ const styles = {
     backgroundSize: "contain",
     backgroundPosition: "center",
     filter: "blur(4px)",
-    objectFit:"cover"
+    objectFit: "contain",
   },
 
   iconContainer: {
@@ -253,6 +253,7 @@ const styles = {
     fontFamily: "Sweet Sans Pro",
     fontWeight: "500",
     color: "#ffffff",
+    width:"80%"
   },
   cardContent: {
     fontSize: "12px",
@@ -260,7 +261,7 @@ const styles = {
     fontWeight: "400",
     color: "#ffffff",
     mt: "1rem",
-    height:"100px"
+    height: "100px",
   },
 
   headingContainer: {
@@ -272,6 +273,8 @@ const styles = {
     width: "5px",
     height: "100%",
     backgroundColor: "#378C92",
+    padding:"0",
+    margin:"0",
   },
 };
 
@@ -281,6 +284,7 @@ const Products = () => {
   const contentRef = useRef(null);
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [Productid, setproductid] = useState(0);
 
   const handleHover = (index) => {
     setHoveredIndex(index);
@@ -292,67 +296,91 @@ const Products = () => {
 
   const cardData = [
     {
+      id:1,
       heading: "Renimer BK11 Wireless Earbuds",
       content:
         "Craft interactive and dynamic websites tailored to your business needs. Our expert developers leverage the latest technologies to deliver high-performance web solutioBluetooth 5.3, One-Step Pairing, Professional Audio, Comfortable, 40 Hrs Playtime, 4 ENC Mics, Fast Charging, LED Battery Display, Sensitive Touch, IP7 Waterproof, Universal Compatibility, Type-C ChargingBluetooth 5.3, One-Step Pairing, Professional Audio, Comfortable, 40 Hrs Playtime,4 ENC Mics, Fast Charging, LED Battery Display, Sensitive Touc… See morens that drive results.",
       backgroundImage: Prod1.src,
+      price: "£ 74.99",
     },
     {
+      id:2,
       heading: "INIU USB C Charger Cable 2m 3.1A Type C Cable Fast Charging",
       content:
         "INIU - The SAFE Fast Charging Professional Experience the safest charging with over 38 million global users. At INIU, we only use the highest quality materials, so we have the confidence to provide industry-leading 3 year warranty.Fast Charge 3.1A Designed with advanced Super Conductivity copper cables for reliable high speed of 3.1A Fully support fast charging QC 3.0 to incredibly revitalize your phone up to 93% in 1 hour.",
       backgroundImage: Prod2.src,
+      price: "£ 15.00",
     },
     {
+      id:3,
       heading: "Moobesthy Wireless Headphones Over Ear, Bluetooth Headphones",
       content:
         "Bluetooth 5.0 & Built-in Microphone  Wireless Headphones Over Ear Built in two 40mm large bezel driver units and Bluetooth 5.0 technology, our bluetooth headphones with microphone can offer more stable transmission speed, lower latency and better audio output,which give you wonderful music enjoyment. And built-in microphone of our lightweight headphones enables a hands-free clear phone communication, which like talking face to face with your families and friends.",
       backgroundImage: Prod3.src,
+      price: "£ 34.99",
     },
     {
+      id:4,
       heading: "RIENOK Bluetooth Speaker Portable Wireless Bluetooth Speaker",
       content:
         "HD Stereo Extra Bass: The wireless bluetooth speaker equips with 30W high power full frequency drivers speaker and an advanced digital signal processor to ensure a high-fidelity sound system. Extra bass button to enhance the bass effect",
       backgroundImage: Prod4.src,
+      price: "£ 49.99",
     },
     {
+      id:5,
       heading: "Wireless Charger, 3 in 1 Charging Station",
       content:
         "3 in 1 Wireless Charging Station with Adapter  Experience the convenience of charging up to 3 for your devices simultaneously, your phone, AirPods, and iWatch. Our fast wireless charger provides fast charging at 15W for your iPhone, 5W for AirPods, and 3W for your Apple Watch.Equipped with updated 25W USB-C Plug and 1-meter cable allow for rapid single-device charging for the iPhone 15 series, save your money. With a 1-meter cable, you can kiss distance-related charging woes goodbye.",
       backgroundImage: Prod5.src,
+      price: "£ 20.49",
     },
     {
-      heading: "USB C HUB, Multiport USB C Adapter for Macbook Pro & Air Accessories",
+      id:6,
+      heading:
+        "USB C HUB, Multiport USB C Adapter for Macbook Pro & Air Accessories",
       content:
         "USB C HUB, Multiport USB C Adapter for Macbook Pro & Air Accessories",
       backgroundImage: Prod6.src,
+      price: "£ 30.00",
     },
     {
+      id:7,
       heading: "Wireless Mouse for Laptop With 2 USB A to USB C Adapter",
       content:
         "WIRELESS & BLUETOOTH: Usb mouse wireless is equipped with 2.4GHz wireless technology which provides an ultra-stable connection, allowing for zero delay between your actions. Furthermore, this technology increases the working distance is 10m. the compact design of the product is highly comfortable and helps to alleviate any tension or discomfort in your fingers and wrist.",
       backgroundImage: Prod7.src,
+      price: "£ 25.00",
     },
     {
-      heading: "Yizhet 1 pair Round Ear Pads 75mm Universal Replacement Earpads",
+      id:8,
+      heading:
+        "Yizhet 1 pair Round Ear Pads 75mm Universal Replacement Earpads",
       content:
         "Universal 75mm round ear pads. Note: There is an error of 1-3mm due to manual measurement, please check your headset size before buying.",
       backgroundImage: Prod8.src,
+      price: "£ 12.99",
     },
     {
-      heading: "Betron 500ml Screen Cleaning Kit Includes Microfibre Cloths and Cleaning Brush",
+      id:9,
+      heading:
+        "Betron 500ml Screen Cleaning Kit Includes Microfibre Cloths and Cleaning Brush",
       content:
         "Betron's comprehensive 500ml screen cleaning kit is designed to provide a thorough cleaning experience for all your electronic devices; it includes two microfiber cloths and a soft brush to ensure every part of your screen is spotless",
       backgroundImage: Prod9.src,
+      price: "£ 31.00",
     },
     {
-      heading: "Under Cabinet Kitchen Lights, 146 LED Motion Sensor Lights Indoor",
+      id:10,
+      heading:
+        "Under Cabinet Kitchen Lights, 146 LED Motion Sensor Lights Indoor",
       content:
         "146 LED Super Bright & Eyes-caring The under cupboard kitchen lights contain 146 LEDs. Compared with traditional cupboard lights, the lamp beads of our lights are hidden on both sides of the lamp body and are invisible, avoiding the light directly irritating your eyes. The under cabinet kitchen lights produce softer, brighter, and more natural light.",
       backgroundImage: Prod10.src,
+      price: "£ 52.00",
     },
   ];
-
+  
   return (
     <Box sx={{ backgroundColor: "#ffffff" }}>
       <Box sx={styles.mainContainer}>
@@ -376,7 +404,14 @@ const Products = () => {
                 }}
               />
               {hoveredIndex === index ? (
-                <Box sx={{ display: "flex", flexDirection: "column",justifyContent:"flex-end", height:'100%' }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "flex-end",
+                    height: "100%",
+                  }}
+                >
                   <Slide
                     direction="right"
                     in
@@ -384,11 +419,28 @@ const Products = () => {
                     container={contentRef.current}
                   >
                     <Box sx={styles.headingContainer}>
-                      <Box sx={styles.headingLine} />
-                      <Typography
-                        sx={{ ...styles.cardHeading, fontSize: "20px" }}
+                      <Box sx={{...styles.headingLine}} />
+                      <Link
+                        sx={{ ...styles.cardHeading, fontSize: "20px",textDecoration:"none" }}
+                        href={`/products/${card.id}`}
+                        onClick={()=>{setproductid(card.id)}}
                       >
                         {card.heading}
+                      </Link>
+                    </Box>
+                  </Slide>
+                  <Slide
+                    direction="right"
+                    in
+                    timeout={500}
+                    container={contentRef.current}
+                  >
+                    <Box sx={styles.headingContainer}>
+                      <Box sx={{...styles.headingLine}}  />
+                      <Typography
+                        sx={{ ...styles.cardHeading, fontSize: "16px",fontWeight:"400",marginTop:"20px",color:"#FFF" }}
+                      >
+                        {card.price}
                       </Typography>
                     </Box>
                   </Slide>
