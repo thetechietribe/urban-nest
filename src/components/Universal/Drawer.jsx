@@ -90,9 +90,9 @@ export default function PersistentDrawerRight() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} sx={{background:'#fff',boxShadow:"none"}}>
-        <Toolbar >
-        <h1 className="nav-logo"><a href='/'>Urban Nest</a></h1>
+      <AppBar position="fixed" open={open} sx={{background:'#fff',boxShadow:"none",height:"100px"}}>
+        <Toolbar sx={{}} >
+        <Typography sx={{textWrap:"nowrap"}} className="nav-logo"><a href='/'>Urban Nest</a></Typography>
           <IconButton
             color="#222"
             aria-label="open drawer"
